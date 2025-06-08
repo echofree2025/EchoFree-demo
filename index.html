@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 主标题（页面标题） */
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* 二级标题 */
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin: 20px 0; /* 统一标题间距 */
+        }
+
+        /* 三级标题 */
+        h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #444;
+            margin: 20px 0; /* 统一标题间距 */
+        }
+
+        /* 四级标题 */
+        h4 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+            margin: 0 0; /* 统一标题间距 */
+        }
+
+        .audio-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            width: 30%;
+            min-width: 250px;
+            padding: 10px;
+        }
+
+        .audio-box {
+            background: #f1f1f1;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Audio Examples for EchoFree</h1>
+    <h2>Performance on ICASSP 2023 AEC Challenge blind test set</h2>
+    <h3>Double-talk Scenario</h3>
+
+    <div class="audio-container">
+        <!-- 第一列：混合音频 -->
+        <div class="column">
+            <h4>Mix</h4>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix1.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix2.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix3.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix4.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix5.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <!-- 第二列：ULCNet-AER 处理后的音频 -->
+        <div class="column">
+            <h4>Processed by ULCNet-AER</h4>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet1.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet2.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet3.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet4.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet5.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <!-- 第三列：EchoFree 处理后的音频 -->
+        <div class="column">
+            <h4>Processed by EchoFree</h4>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree1.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree2.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree3.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree4.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree5.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <h3>Far-end single-talk scenario</h3>
+    
+    <div class="audio-container">
+        <!-- 第一列：混合音频 -->
+        <div class="column">
+            <h4>Mix</h4>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix_fe_1.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix_fe_2.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix_fe_3.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix_fe_4.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix_fe_5.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <!-- 第二列：ULCNet-AER 处理后的音频 -->
+        <div class="column">
+            <h4>Processed by ULCNet-AER</h4>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet_fe_1.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet_fe_2.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet_fe_3.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet_fe_4.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet_fe_5.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <!-- 第三列：EchoFree 处理后的音频 -->
+        <div class="column">
+            <h4>Processed by EchoFree</h4>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree_fe_1.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree_fe_2.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree_fe_3.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree_fe_4.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree_fe_5.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <h3>Near-end single-talk scenario</h3>
+    
+    <div class="audio-container">
+        <!-- 第一列：混合音频 -->
+        <div class="column">
+            <h4>Mix</h4>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix_ne_1.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix_ne_2.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix_ne_3.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix_ne_4.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="mix_ne_5.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <!-- 第二列：ULCNet-AER 处理后的音频 -->
+        <div class="column">
+            <h4>Processed by ULCNet-AER</h4>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet_ne_1.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet_ne_2.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet_fe_3.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet_ne_4.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="ulcnet_ne_5.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <!-- 第三列：EchoFree 处理后的音频 -->
+        <div class="column">
+            <h4>Processed by EchoFree</h4>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree_ne_1.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree_ne_2.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree_ne_3.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree_ne_4.wav" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="audio-box">
+                <audio controls>
+                    <source src="echofree_ne_5.wav" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
